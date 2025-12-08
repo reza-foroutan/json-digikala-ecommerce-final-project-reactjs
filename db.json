@@ -1,48 +1,122 @@
 {
-  "posts": [
+  "authors": [
     {
-      "userId": 1,
-      "id": 1,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-    },
-    {
-      "userId": 2,
-      "id": 2,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-    },
-    {
-      "userId": 3,
-      "id": 3,
-      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      "id": "59761c233d8d0f92a6b0570d",
+      "isActive": true,
+      "age": 24,
+      "name": "Kirsten Sellers",
+      "gender": "female",
+      "company": "EMERGENT",
+      "email": "kirstensellers@emergent.com",
+      "phone": "+1 (831) 564-2190",
+      "address": "886 Gallatin Place, Fannett, Arkansas, 4656"
     }
   ],
-  "products": [
+  "users": [
     {
-      "id": 1,
-      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-      "price": 109.95,
-      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
+      "id": "123",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "mobile_number": "555-555-5555",
+      "is_active": true,
+      "role": "user",
+      "bank_data": {
+        "bank_name": "Example Bank",
+        "account_number": "1234567890",
+        "routing_number": "012345678"
+      },
+      "company_data": {
+        "company_name": "Acme Corporation",
+        "employee_id": "ACME-123",
+        "department": "Sales"
+      },
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+    }
+  ],
+  "posts": [
+    { "id": "1", "postId": "1", "title": "a title", "views": 100 },
+    { "id": "2", "postId": "2", "title": "another title", "views": 200 }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "commentsId": 1,
+      "text": "a comment about post 1",
+      "postId": "1"
     },
     {
-      "id": 2,
-      "title": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": 22.3,
-      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-      "category": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
-      "rating": {
-        "rate": 4.1,
-        "count": 259
-      }
+      "id": "2",
+      "commentsId": 2,
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "product": [
+    {
+      "id": "SKU001",
+      "productId": "SKU001",
+      "name": "Wireless Bluetooth Headphones",
+      "description": "High-fidelity wireless headphones with active noise cancellation and comfortable earcups.",
+      "category": "Electronics",
+      "brand": "SoundBliss",
+      "price": 79.99,
+      "currency": "USD",
+      "stockQuantity": 150,
+      "available": true,
+      "features": [
+        "Active Noise Cancellation",
+        "Bluetooth 5.0",
+        "20-hour Battery Life",
+        "Built-in Microphone"
+      ],
+      "specifications": {
+        "processor": "Apple M1 chip",
+        "memory": "8GB or 16GB",
+        "storage": "256GB, 512GB, 1TB, or 2TB SSD",
+        "display": "13.3-inch Retina display",
+        "graphics": "Up to 8-core GPU",
+        "battery_life": "Up to 18 hours",
+        "dimensions": "11.97 x 8.36 x 0.63 inches",
+        "weight": "2.8 pounds"
+      },
+      "reviews": [
+        {
+          "id": "1",
+          "reviewId": "REV001",
+          "userId": "USER123",
+          "rating": 5,
+          "date": "2025-11-20",
+          "author": "John Smith",
+          "text": "This is the best laptop I've ever owned! It's incredibly fast and the battery lasts all day.",
+          "timestamp": "2023-02-10T12:30:00Z"
+        }
+      ],
+      "images": [
+        "https://example.com/images/headphone_front.jpg",
+        "https://example.com/images/headphone_side.jpg",
+        "https://example.com/images/headphone_packaging.jpg"
+      ],
+      "tags": [
+        "headphones",
+        "wireless",
+        "bluetooth",
+        "audio",
+        "noise cancelling"
+      ],
+      "related_products": [
+        {
+          "id": "67890",
+          "name": "Apple iPad Pro",
+          "price": 799.99,
+          "image": "https://example.com/ipad-pro-image.png"
+        },
+        {
+          "id": "54321",
+          "name": "Apple iPhone 13",
+          "price": 699.99,
+          "image": "https://example.com/iphone-13-image.png"
+        }
+      ]
     }
   ]
 }
